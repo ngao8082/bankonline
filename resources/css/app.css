@@ -1,0 +1,7 @@
+.divider:after,
+.divider:before {
+    content: "" !important;
+    flex: 1 !important;
+    height: 1px !important;
+    background: #eee !important;
+}

@@ -1,0 +1,60 @@
+{
+    "name": "irabbi360/laravelvideoable",
+    "description": "Attach Videos to your Eloquent Models",
+    "keywords": [
+        "irabbi360",
+        "laravel-videoable",
+        "laravel",
+        "laravel-videoable",
+        "video",
+        "youtube",
+        "vimeo"
+    ],
+    "homepage": "https://github.com/irabbi360/laravel-videoable",
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Fazle Rabbi",
+            "email": "fazle08rabbi@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Irabbi360\\LaravelVideoable\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Irabbi360\\LaravelVideoable\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Irabbi360\\LaravelVideoable\\LaravelVideoableServiceProvider"
+            ],
+            "aliases": {
+                "LaravelVideoable": "Irabbi360\\LaravelVideoable\\LaravelVideoableFacade"
+            }
+        }
+    }
+}
